@@ -1,0 +1,10 @@
+{
+  "name" : "dchat_server",
+  "description" : "A simple chat listener",
+	"copyright"   : "Copyright (C) 2016 alphaKAI",
+	"authors"     : ["alphaKAI"],
+  "dependencies": {
+    "libasync" : "~master"
+  },
+  "license":"MIT"
+}
