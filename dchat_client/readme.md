@@ -1,13 +1,13 @@
 #dchat\_client
-A hobby chat client with libasync and GtkD(1.7.8)
+A hobby chat client with libasync and GtkD(3.0.0)
 
 #Installation
 ##GtkD
 ```zsh
 % mkdir tmp_gtkd
 % cd !^
-% wget http://gtkd.org/Downloads/sources/GtkD-1.7.8.zip
-% unzip GtkD-1.7.8.zip
+% wget http://gtkd.org/Downloads/sources/GtkD-3.0.0.zip
+% unzip GtkD-3.0.0.zip
 % make
 % sudo make install
 ```

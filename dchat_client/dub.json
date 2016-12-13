@@ -3,11 +3,11 @@
 	"description" : "A Simple Chatr Client",
 	"copyright"   : "Copyright (C) 2016 alphaKAI",
 	"authors"     : ["alphaKAI"],
-  "libs":["curl", "gtkd-1", "dl"],
+  "libs":["curl", "gtkd-3", "dl"],
 	"dependencies": {
     "twitter4d" : "*",
     "libasync"  : "~master"
 	},
-  "dflags"  : ["-I/usr/local/include/d/gtkd-1/"],
+  "dflags"  : ["-I/usr/local/include/d/gtkd-3"],
   "license" : "MIT"
 }

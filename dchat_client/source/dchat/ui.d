@@ -5,7 +5,7 @@ import gtk.CellRendererPixbuf,
        gtk.ScrolledWindow,
        gtk.TreeViewColumn,       
        gtk.MainWindow,
-       gtk.ObjectGtk,
+//       gtk.ObjectGtk,
        gtk.TextBuffer,
        gtk.TreeStore,
        gtk.ListStore,
@@ -59,7 +59,7 @@ class DchatUI {
 
     swindow = new ScrolledWindow;
 
-    mainWindow.addOnDestroy(((ObjectGtk w) => quit));
+    mainWindow.addOnDestroy(((Widget w) => quit));
     mainWindow.setDefaultSize(800, 800);
 
     store = new TreeStore([GType.STRING, GType.STRING]);
@@ -75,7 +75,8 @@ class DchatUI {
     view.appendColumn(snColumn);
 
     swindow.addWithViewport(view);
-    swindow.setUsize(800, 500);
+    swindow.setMinContentHeight(500);
+    swindow.setMinContentWidth(800);
     vbox.add(swindow);
 
     HBox hbox = new HBox(false, 2);
@@ -84,7 +85,7 @@ class DchatUI {
     Button postBtn = new Button("post", (Button) {
           string str = tv.getBuffer.getText;
           this.post(str);
-          //tv.setBuffer(null);
+          tv.setBuffer(null);
         });
     hbox.add(postBtn);
     vbox.add(hbox);
